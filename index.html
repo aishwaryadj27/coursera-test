@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app = "DIApp">
   <head>
     <meta charset="utf-8">
-    <title>Hello Coursea</title>
+      <script src="angular.min.js"></script>
+      <script src= "app.js"></script>
+
+
+    <title>Dependency Injection on JS and Angular JS </title>
   </head>
   <body>
-    <h1>Hello Coursera !!! Students !!! Hello World</h1>
+    <h1>Dependency Injection in JS and Angular JS </h1>
+    <div ng-controller = "DIController">
+      <input type="text" name="" value="" ng-model = "name" ng-blur = "upper();">
+    </div>
   </body>
-</html>
+
+  </html>
