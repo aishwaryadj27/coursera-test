@@ -14,11 +14,11 @@ function LunchController($scope) {
     var strarr = arr.split(",");
     var size = strarr.length;
     for(var i in strarr){
-      if(strarr[i] == "")
+      if(strarr[i] == "" || strarr[i] == " ")
       {
         size--;
       }
-  }
+    }
     var msg = "Total number of Items is:"+size+"     ";
     if(size == 0){
       $scope.message = "Please enter data first";
